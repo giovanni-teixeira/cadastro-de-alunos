@@ -121,4 +121,37 @@ document.getElementById('salvarJson').addEventListener('click', function () {
     document.body.removeChild(link);
 });
 
+document.getElementById('importarJson').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            try {
+                const dados = JSON.parse(e.target.result); // Converte o conteúdo do arquivo para objeto
+                if (Array.isArray(dados)) {
+                    // Adiciona os alunos importados à lista existente
+                    dados.forEach(aluno => {
+                        // Verifica se o aluno já existe pelo RA antes de adicionar
+                        const alunoExistente = alunos.find(a => a.ra === aluno.ra);
+                        if (!alunoExistente) {
+                            alunos.push(aluno);
+                        }
+                    });
+                    salvarAlunos(); // Salva os alunos atualizados no localStorage
+                    atualizarTabela(); // Atualiza a tabela para mostrar os alunos
+                } else {
+                    alert('O arquivo JSON deve conter um array de alunos.');
+                }
+            } catch (error) {
+                alert('Erro ao ler o arquivo JSON: ' + error.message);
+            }
+        };
+
+        reader.readAsText(file); // Lê o arquivo como texto
+    }
+});
+
+
 carregarAlunos();

@@ -125,3 +125,26 @@ button.delete:hover {
 .buttons button {
     margin: 10px;
 }
+
+/* CSS para o estilo do input */
+#inputImportacao {
+    display: none; /* Esconde o input original */
+}
+
+/* Estilizando o rótulo (imagem e span) */
+label {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+span {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do input */
+    transition: border-color 0.3s ease; /* Efeito na borda ao focar */
+}
+
+span:hover {
+    border-color: #4CAF50; /* Cor da borda ao passar o mouse */
+}
