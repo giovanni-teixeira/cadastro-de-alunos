@@ -110,16 +110,12 @@ document.getElementById('ordenarAprovados').addEventListener('click', function (
     atualizarTabela(aprovados);
 });
 
-document.getElementById('salvarTxt').addEventListener('click', function () {
-    let texto = 'Nome,RA,Média,Resultado\n';
-    alunos.forEach(aluno => {
-        texto += `${aluno.nome},${aluno.ra},${aluno.media},${aluno.resultado}\n`;
-    });
-
-    const blob = new Blob([texto], { type: 'text/plain' });
+document.getElementById('salvarJson').addEventListener('click', function () {
+    const json = JSON.stringify(alunos, null, 2); // Converte os alunos para JSON com formatação
+    const blob = new Blob([json], { type: 'application/json' }); // Define o tipo como JSON
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'alunos.txt';
+    link.download = 'alunos.json'; // Altera a extensão para .json
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

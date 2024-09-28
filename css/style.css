@@ -74,7 +74,7 @@ th {
     background-color: #e7f1ff; /* Azul muito claro */
 }
 
-#salvarTxt, #ordenarNome, #ordenarRA, #ordenarAprovados, #cadastrarAlunos {
+#salvarJson, #ordenarNome, #ordenarRA, #ordenarAprovados, #cadastrarAlunos {
     margin-top: 20px;
     padding: 10px 15px;
     background-color: #003DA5; /* Azul institucional */
@@ -85,7 +85,7 @@ th {
     transition: 0.5s;
 }
 
-#salvarTxt:hover, #ordenarNome:hover, #ordenarRA:hover, #ordenarAprovados:hover, #cadastrarAlunos:hover {
+#salvarJson:hover, #ordenarNome:hover, #ordenarRA:hover, #ordenarAprovados:hover, #cadastrarAlunos:hover {
     background-color: #002A7E; /* Azul mais escuro */
     transition: 0.5s;
 }
