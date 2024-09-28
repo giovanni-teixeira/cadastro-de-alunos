@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: #F5F5F5; /* Cinza claro */
+}
+
+h1, h2 {
+    color: #003DA5; /* Azul institucional */
+    text-align: center;
+    margin: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* Branco */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    margin-right: 20px;
+    margin: auto;
+}
+
+form #cadastrarAlunos {
+    padding: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #003DA5; /* Azul institucional */
+}
+
+form input::placeholder {
+    color: #aaa;
+    font-size: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e7f1ff; /* Azul muito claro */
+}
+
+#salvarTxt, #ordenarNome, #ordenarRA, #ordenarAprovados, #cadastrarAlunos {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #003DA5; /* Azul institucional */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#salvarTxt:hover, #ordenarNome:hover, #ordenarRA:hover, #ordenarAprovados:hover, #cadastrarAlunos:hover {
+    background-color: #002A7E; /* Azul mais escuro */
+    transition: 0.5s;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #28a745; /* Verde para ações positivas */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #218838; /* Verde escuro */
+}
+
+button.delete {
+    background-color: #dc3545; /* Vermelho para deletar */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 5px; 
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 10px;
+}

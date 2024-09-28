@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="icon" href="https://google.avancado.info/images/04040404.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="text-align: center; margin-bottom: 20px;">
+        <img src="https://google.avancado.info/images/04040404.png" alt="Logo FATEC" style="max-width: 100px; height: auto;">
+        <h1 style="color: #003DA5;">Cadastro de Alunos</h1>
+    </header>
+
+    <form id="alunoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome" required><br>
+    
+        <label for="ra">RA:</label>
+        <input type="text" id="ra" placeholder="Digite o RA" required><br>
+    
+        <label for="media">Média:</label>
+        <input type="number" id="media" step="0.1" min="0" max="10" placeholder="0.0" required><br>
+    
+        <button id="cadastrarAlunos" type="submit">Cadastrar Aluno</button>
+    </form>
+    
+    <div class="buttons">
+        <button id="ordenarNome">Ordenar por Nome (Crescente)</button>
+        <button id="ordenarRA">Ordenar por RA (Decrescente)</button>
+        <button id="ordenarAprovados">Ordenar Aprovados por Nome (Crescente)</button>
+        <button id="salvarTxt">Salvar Arquivo</button>
+    </div>
+
+    <h2>Relatório de Alunos</h2>
+    <table id="alunosTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RA</th>
+                <th>Média</th>
+                <th>Resultado</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados dos alunos serão inseridos aqui -->
+        </tbody>
+    </table>
+    
+
+    <script type="module" src="js/main.mjs"></script>
+</body>
+</html>
