@@ -121,7 +121,7 @@ document.getElementById('salvarJson').addEventListener('click', function () {
     document.body.removeChild(link);
 });
 
-document.getElementById('importarJson').addEventListener('change', function(event) {
+document.getElementById('inputImportacao').addEventListener('change', function(event) {
     const file = event.target.files[0];
 
     if (file) {
