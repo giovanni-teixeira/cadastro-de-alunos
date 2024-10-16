@@ -145,7 +145,7 @@ document.getElementById('inputImportacao').addEventListener('change', function(e
                     alert('O arquivo JSON deve conter um array de alunos.');
                 }
             } catch (error) {
-                alert('Erro ao ler o arquivo JSON: ' + error.message);
+                alert('Erro ao ler o arquivo JSON: ' + error.message); // Tratamento de erro
             }
         };
 
