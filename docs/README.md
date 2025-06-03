@@ -83,5 +83,4 @@ Este projeto é um sistema simples de cadastro de alunos, que permite adicionar,
 ## Authors
 
 - [giovanni-teixeira](https://github.com/giovanni-teixeira)
-- [carlosgabriel1999](https://github.com/carlosgabriel1999)
 - [igor-knoll](https://github.com/igor-knoll)
